@@ -1,1 +1,87 @@
 /* Write your CSS here */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+}
+
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  background-image: linear-gradient(to bottom, #fff1eb, #ace0f9);
+}
+
+.app-store {
+  width: 85%;
+  max-width: 1154px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  color: #1e293b;
+  font-size: 35px;
+  font-family: 'Bree Serif';
+  font-weight: 700;
+  margin-top: 64px;
+  margin-bottom: 48px;
+}
+
+.search-input-container {
+  display: flex;
+  border: 1px solid #7b8794;
+  border-radius: 10px;
+  padding: 10px;
+  align-items: center;
+  height: 40px;
+  width: 100%;
+  max-width: 250px;
+  padding: 16px 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .search-input-container {
+    max-width: 480px;
+  }
+  .tab-list {
+    margin-top: 48px;
+  }
+}
+
+.search-input {
+  border: none;
+  font-size: 16px;
+  font-family: 'Roboto';
+  color: #7b8794;
+  outline: none;
+  background-color: transparent;
+  flex-grow: 1;
+  font-weight: 500;
+}
+
+.search-icon {
+  width: 25px;
+  height: 25px;
+  border: none;
+  outline: none;
+}
+
+.tab-list {
+  display: flex;
+  flex-direction: row;
+  padding-left: 0px;
+  margin-top: 32px;
+}
+
+.app-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-left: 0px;
+}

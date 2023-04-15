@@ -1,6 +1,7 @@
 import {Component} from 'react'
 import AppItem from '../AppItem'
 import TabItem from '../TabItem'
+import './index.css'
 
 const tabsList = [
   {tabId: 'SOCIAL', displayText: 'Social'},
@@ -330,7 +331,7 @@ class AppStore extends Component {
     return (
       <div className="app-container">
         <div className="app-store">
-          <h1>App Store</h1>
+          <h1 className="heading">App Store</h1>
           <div className="search-input-container">
             <input
               type="search"
